@@ -1,0 +1,1281 @@
+    @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+
+    @import url(https://db.onlinewebfonts.com/c/1d7251d7d54f1da0d2dca782c34d7890?family=Apple+Braille);
+
+    @font-face {
+    font-family: "Apple Braille";
+    src: url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.eot");
+    src: url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1d7251d7d54f1da0d2dca782c34d7890.svg#Apple Braille")format("svg");
+}
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        background-color: #F7F7F7;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    
+
+    #wrap {
+        position: relative;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    p{
+        font-family: Helvetica, Arial, sans-serif;
+        /* font-family: "Apple Braille"; */
+        font-weight: 300;
+    }
+
+    .lap{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: transparent;
+        transition: background-color 0.3s ease-out;
+    }
+
+    header li{
+        list-style-type: none;
+    }
+
+
+    .head-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #B650F0;
+        padding: 0.16vw;
+    }
+
+    .head-top p {
+        position: relative;
+        right: 44.2vw;
+        top: 0.2vw;
+        font-size: 2vw;
+        color: #FCFF55;
+    }
+
+    .head-top img {
+        width: 5vw;
+        position: relative;
+        left: 1.7vw;
+    }
+
+    .head-middle {
+        background-color: #ededed;
+        height: 3.4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0vw 0.1vw 0.4vw rgba(30, 30, 30, 0.168);
+    }
+
+    .head-middle .button {
+        display: flex;
+        position: relative;
+        right: 32.5vw;
+    }
+
+    .head-middle .button-red {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FE5F58;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-yellow {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FEBC30;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-green {
+        width: 1vw;
+        height: 1vw;
+        background-color: #29C840;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle p {
+        font-size: 1.3vw;
+        color: #4C4C4C;
+        border: 0.15vw solid #d1d1d0b4;
+        border-radius: 0.6vw;
+        padding: 0.4vw 8vw 0.4vw 8vw;
+        /* 위  오  아 왼*/
+    }
+
+    .logo {
+        width: 14vw;
+        padding: 3vw;
+        position: relative;
+        left: 3vw;
+    }
+
+    .line {
+        border: 0.01vw solid #ffff;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 1.95vw;
+    }
+
+    /* 전체 헤더 컨테이너를 Flexbox로 설정 */
+    .main-header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 3vw;
+        position: relative;
+        left: 32vw;
+        bottom: 5.15vw;
+    }
+
+    .left-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+    .right-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+    }
+
+    .middle-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+
+    .left-group ul {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-group li {
+        margin-bottom: 0.3vw;
+        text-align: center;
+    }
+
+
+    .main-header a {
+        display: block;
+        text-decoration: none;
+        color: #ffff;
+        font-size: 1vw;
+        padding-top: 1vw;
+        border-top: 0.26vw solid #ffff;
+        width: 100%;
+    }
+
+
+
+    .left-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+    .middle-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .right-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .left-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .middle-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .right-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        transform: rotate(15deg);
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+
+    .logo,
+    .line,
+    .main-header {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+
+    /* --- 새로 추가된 기능용 CSS --- */
+header {
+    position: fixed; 
+    transition: transform 0.4s ease-in-out; 
+}
+
+/* .menu-trigger {
+    z-index: 20;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #B650F0; 
+    cursor: pointer;
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease;
+    padding: 0.5vw 1vw;
+    border-radius: 2vw;
+} */
+
+.menu-trigger.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* --- [수정된 버전] 기능 구현 CSS --- */
+.logo, .line, .main-header {
+    opacity: 1;
+    transform: none;
+}
+
+header {
+    position: fixed;
+    top: 6.2vw;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: transform 0.5s ease-in-out, background-color 0.5s;
+}
+
+
+header.hide {
+    transform: translateY(-150%);
+}
+
+header.active {
+    background-color: #da9dfd58; 
+    backdrop-filter: blur(0.4vw); /* 👈 블러 효과 추가 (픽셀값 조절 가능) */
+    -webkit-backdrop-filter: blur(0.4vw); /* 👈 사파리 브라우저 호환용 */
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+}
+
+/* --- [추가] 메뉴 열렸을 때 내부 요소 색상 변경 --- */
+
+
+header.active .main-header a {
+    color: #B650F0;     
+    border-top-color: #B650F0 ; /* 메뉴 위 얇은 선도 보라색으로 */
+    transition: color 0.5s, border-color 0.5s; /* 색깔 부드럽게 바뀌게 */
+}
+
+
+header.active .line {
+    border-color: #B650F0;
+    transition: border-color 0.5s;
+}
+
+/* 3. 작은 장식 선들 (.line-1) 배경색 변경 */
+header.active .line-1 {
+    background-color: #B650F0;
+    transition: background-color 0.5s;
+}
+
+
+.menu-trigger {
+    position: fixed;
+    top: 7vw;
+    right: 1vw;
+    z-index: 100;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #B650F0;
+    padding: 0.6vw 1.5vw;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+
+}
+
+.menu-trigger.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-trigger:hover {
+    font-size: 1.7vw;
+}
+
+
+
+
+
+    .main {
+        width: 100vw;
+        min-height: 100vw;
+        background-image: url('../img/monica-main.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 5vw;
+    }
+
+    .main .title{
+        width: 87vw;
+        position: relative;
+        top: 56vw;
+        left: 6vw;
+    }
+
+    .main img:nth-child(1){
+        width: 62vw;
+        position: relative;
+        left: 7vw;
+        top: 54vw;
+    }
+
+    .main img:nth-child(2){
+        width: 20vw;
+        position: relative;
+        top: 54vw;
+        left: 11vw;
+    }
+
+    .main img:nth-child(3){
+        width: 45.16vw;
+        /* position: relative;
+        top: 52vw;
+        left: 21.5vw; */
+        position: relative;
+        left: 37vw;
+        top: 54vw;
+    }
+
+ .section-1{
+        width: 100vw;
+        min-height: 100vw;
+        /* border: 3px solid red; */
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2vw;
+        /* padding-top: 20vw; */
+        margin-top: 20vw;
+        position: relative;
+    }
+
+    .section-1 .section-1-txt{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: left;
+        position: absolute;
+        top: -2vw;
+        left: 7vw;
+        /* border: 1px solid red; */
+    }
+    .section-1 h1{
+        font-size: 24vw;
+        color: #EF4242;
+        font-family: 'Helvetica Neue 5';
+        font-weight: 900;
+        letter-spacing: -1vw;
+    }
+
+    .section-1 .section-1-txt p{
+        font-size: 1.3vw;
+        width: 47vw;
+        color: #EF4242;
+        position: absolute;
+        /* bottom: 5vw; */
+        top: 23vw;
+        left: 1.7vw;
+    }
+
+    .section-1-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10vw;
+    }
+
+    .section-1-img img{
+        margin: 0.5vw;
+    }
+    .section-1-img h3{
+        font-size: 3.5vw;
+        color: #EF4242;
+        font-family: 'Helvetica Neue 5';
+        font-weight: 900;
+        letter-spacing: -0.1vw;
+        /* letter-spacing: -1vw; */
+    }
+
+    .section-1-img p{
+        font-size: 2.3vw;
+        width: 40vw;
+    }
+
+    .section-1-img .chef{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: left;
+        position: absolute;
+        left: 23vw;
+        top: 65vw;
+    }
+    .section-1-img .chef img{
+        width: 29vw;
+    }
+
+    .section-1-img .chef-h3{
+        position: relative;
+        top: 13vw;
+        right: 22.6vw;
+    }
+
+    .section-1-img .monica-2  {
+        width: 14vw;
+        height: 14vw;
+        object-fit: cover;
+        position: absolute;
+        top:  54.5vw;
+        left: 38vw;
+        /* border: 1px solid red; */
+    }
+
+    .section-1-img .hover-wrapper img{
+        width: 40vw;
+    }
+
+    .section-1-img .perfect-h3{
+        position: absolute;
+        top: 39vw;
+        left: 53.5vw;
+    }
+
+    .section-1 .hover-wrapper-chef{
+
+    }
+
+    .section-1 .hover-wrapper-chef img{
+        width: 29vw;
+    }
+
+
+
+    .section-1-img .hover-wrapper-chef {
+    /* 🚩 1. 호버 영역의 기준점 설정 */
+    position: absolute;
+    left: 23.5vw;
+    top: 70vw; 
+    
+    /* 🚩 2. 크기를 내부 콘텐츠(img)에 맞게 설정 */
+    /* width: fit-content; 는 유지하되, height도 강제 설정이 필요합니다. */
+    width: fit-content; 
+    
+    /* 🚨 이미지와 p 태그가 래퍼를 꽉 채우도록 height도 img에 맞춰줍니다. */
+    /* 이미지 너비가 40vw이므로, 높이도 40vw라고 가정 (정사각형 기준) */
+    height: 29vw; 
+
+    /* 🚩 3. 간섭 차단 */
+    margin: 0; 
+    padding: 0;
+    line-height: 2.2vw;
+    overflow: hidden; 
+    cursor: pointer;
+}
+
+
+.section-1-img .hover-wrapper-chef img {
+    /* 이미지는 래퍼의 100%를 차지하며 크기 설정 (40vw)은 이미 클래스로 처리됨 */
+    width: 100%; 
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.section-1-img .hover-wrapper-chef p {
+    /* 🚩 4. p 태그는 래퍼를 완벽하게 덮습니다. */
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    font-size: 1.9vw;
+    font-weight: 400;
+    text-align: left;
+    background-color: #f9cece6b; 
+    color: white; 
+    padding:5vw 0vw 0vw 1vw;
+    opacity: 0;
+    visibility: hidden;
+    /* width: 30vw; */
+    
+    /* 부드러운 전환 효과 */
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+
+/* 🚩 5. 호버 효과 적용 (대상: .hover-wrapper) */
+.section-1-img .hover-wrapper-chef:hover img {
+    opacity: 0.3; 
+    transition: opacity 0.8s ease;
+}
+
+.section-1-img .hover-wrapper-chef:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+    /* ---------------------------------------------------- */
+/* Perfectionist 그룹 (.hover-wrapper) 최종 수정 */
+/* ---------------------------------------------------- */
+
+.section-1-img .hover-wrapper {
+    /* 🚩 1. 호버 영역의 기준점 설정 */
+    position: absolute;
+    left: 53.5vw;
+    top: 44vw; 
+    
+    /* 🚩 2. 크기를 내부 콘텐츠(img)에 맞게 설정 */
+    /* width: fit-content; 는 유지하되, height도 강제 설정이 필요합니다. */
+    width: fit-content; 
+    
+    /* 🚨 이미지와 p 태그가 래퍼를 꽉 채우도록 height도 img에 맞춰줍니다. */
+    /* 이미지 너비가 40vw이므로, 높이도 40vw라고 가정 (정사각형 기준) */
+    height: 40vw; 
+
+    /* 🚩 3. 간섭 차단 */
+    margin: 0; 
+    padding: 0;
+    line-height: 2.2vw;
+    overflow: hidden; 
+    cursor: pointer;
+}
+
+
+.section-1-img .hover-wrapper img {
+    /* 이미지는 래퍼의 100%를 차지하며 크기 설정 (40vw)은 이미 클래스로 처리됨 */
+    width: 100%; 
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.section-1-img .hover-wrapper p {
+    /* 🚩 4. p 태그는 래퍼를 완벽하게 덮습니다. */
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    /* width: 100%;  */
+    height: 100%; 
+    font-size: 1.9vw;
+    font-weight: 400;
+    text-align: left;
+    
+    /* 텍스트 스타일링 */
+    background-color: #f9cece6b; 
+    color: white; 
+    padding:5vw 0vw 0vw 2vw;
+    
+    /* 초기 숨김 상태 */
+    opacity: 0;
+    visibility: hidden;
+    
+    /* 부드러운 전환 효과 */
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+
+/* 🚩 5. 호버 효과 적용 (대상: .hover-wrapper) */
+.section-1-img .hover-wrapper:hover img {
+    opacity: 0.3; 
+    transition: opacity 0.8s ease;
+}
+
+.section-1-img .hover-wrapper:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+.section-2{
+    width: 100vw;
+    min-height: 100vw;
+    /* border: 1px solid blue; */
+    position: relative;
+    margin-top: 30vw;
+}
+
+.section-2 h1{
+    font-size: 3.5vw;
+    color: #EF4242;
+    padding: 2.5vw 4.5vw 0vw 4.5vw;
+    font-family: 'Helvetica Neue 5';
+    font-weight: 900;
+    letter-spacing: -0.2vw;
+    margin-bottom: 1vw;
+}
+
+.section-2 img{
+    width: 100vw;
+}
+
+.section-2-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2vw 0vw 0vw 4vw;
+}
+
+.section-2-bottom img{
+    width: 20vw;
+}
+
+.section-2 p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    position: relative;
+    bottom: 0.5vw;
+    padding: 1.2vw 4.5vw 0vw 2.5vw;
+    color: #EF4242;
+}
+
+
+.section-3{
+    width: 100vw;
+    min-height: 150vw;
+    /* border: 9px solid red; */
+    margin-top: 19vw;
+}
+.section-3 .bag-bg{
+    width: 100vw;
+}
+
+
+.section-3 .monica-bag-bg{
+    width: 100vw;
+    height: 50vw;
+    background-image: url('../img/monica-bag-bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.section-3 .monica-bag-bg img{
+    width: 56vw;
+    /* padding: 3vw; */
+    position: relative;
+    left: 5vw;
+    top: 3.5vw;
+}
+
+
+.section-3 .monica-bag{
+    width: 100vw;
+    height: 67vw;
+    background-color: #EF4242;
+    color: #F9CECE;
+    position: relative;
+    bottom: 1vw;
+}
+
+.section-3 .monica-bag p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    padding: 8vw 2vw 0vw 9vw;
+    width: 78vw;
+}
+
+.section-3 .bag-img{
+    padding: 4.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 3vw;
+}
+
+.section-3 .bag-img img{
+    width: 55vw;
+    margin: 4vw;
+}
+
+.section-3 .bag-img ul{
+    transform: translateX(-2vw);
+}
+
+.section-3 .bag-img ul li{
+    list-style: none;
+    margin-bottom: 2vw;
+}
+
+.section-3 .bag-img ul li span{
+    font-size: 1.9vw;
+}
+.section-3 .bag-img ul li p{
+    padding: 0;
+    font-size: 1.5vw;
+    width: 27vw;
+}
+
+.section-4{
+    width: 100vw;
+    min-height: 84vw;
+    /* border: 2px solid green; */
+}
+
+.section-4 h2{
+    font-family: 'Helvetica Neue 5';
+    font-weight: 900;
+    color: #EF4242;
+    font-size: 4.5vw;
+    letter-spacing: -0.2vw;
+}
+
+.section-4 .monica-rule-1{
+    display: flex;
+}
+
+.section-4 .monica-rule-1 img{
+    width: 38vw;
+    height: 38vw;
+    object-fit: cover;
+    /* object-position: left top; */
+}
+
+.section-4 .monica-rule-1 .rule-txt{
+    display: flex;
+    flex-flow: column;
+    padding: 2vw;
+    position: relative;
+    top: 9vw;
+}
+
+
+.section-4 .monica-rule-1 .rule-txt p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    width: 52vw;
+    color: #EF4242;
+}
+
+
+.section-4 .monica-rule-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .monica-rule-2 img{
+    width: 20vw;
+    /* position: relative;
+    left: 3.3vw;
+    bottom: 5vw; */
+    transform: translateY(-8.3vw) translateX(1vw);
+}
+
+.section-4 .monica-rule-2 ul{
+    position: relative;
+    left: 5vw;
+    top: 10vw;
+    margin-right:3vw ;
+}
+.section-4 .monica-rule-2 ul li{
+    list-style: none;
+    width: 20vw;
+    margin-bottom: 1.6vw;
+}
+
+
+.section-4 .monica-rule-2 ul li p{
+    font-size: 1.6vw;
+    color: #EF4242;
+    line-height: 2vw;
+}
+
+.section-4 .monica-rule-2 ul li p span{
+    font-family: 'Helvetica Neue 5';
+    font-weight: 900;
+    margin-right: 1vw;
+}
+
+.monica-rule-2 ul:nth-of-type(1) {
+    /* border: 1px solid red; */
+    transform: translateY(-7vw) translateX(-2vw);
+}
+
+.monica-rule-2 ul:nth-of-type(2) {
+    /* border: 1px solid red; */
+    transform: translateY(3vw) translateX(-1vw);
+}
+
+
+.section-5{
+    width: 100vw;
+    min-height: 70vw;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.section-5 h1{
+    font-family: 'Helvetica Neue 5';
+    font-weight: 900;
+    font-size: 30vw;
+    position: absolute;
+    left: 5.6vw;
+    color: #FFB8B8;
+    z-index: 2;
+    white-space: nowrap;
+    letter-spacing: -0.2vw;
+}
+
+
+.section-5 img:nth-child(2){
+    position: absolute;
+    left: 50vw;
+    top: 8vw;
+    width: 40vw;
+    z-index: 1;
+}
+
+.section-5 img:nth-child(3){
+    position: absolute;
+    left: 59vw;
+    top: 9.2vw;
+    width: 30vw;
+    z-index: 5;
+}
+
+.section-5 .but-not{
+    /* border: 1px solid red; */
+    margin-top: 40vw;
+    padding: 2vw 2vw 2vw 4vw;
+    position: absolute;
+    bottom: 2.5vw;
+    left: 4vw;
+}
+
+.section-5 .but-not img{
+    width: 22vw;
+}
+
+.section-5 .but-not h3{
+    font-size: 3.5vw;
+    color: #EF4242;
+    font-family: 'Helvetica Neue 5';
+    font-weight: 900;
+    letter-spacing: -0.1vw;
+    margin-top: 2vw;
+        
+}
+
+.section-5 .but-not p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    width: 58vw;
+    color: #EF4242;
+}
+
+.section-6{
+    width: 100vw;
+    min-height: 20vw;
+    /* border: 1px solid red; */
+    position: relative;
+    padding: 3vw;
+    margin-top: 20vw;
+    padding-top: 20vw;
+}
+
+.section-6 h3{
+    font-size: 3.5vw;
+        color: #EF4242;
+        font-family: 'Helvetica Neue 5';
+        font-weight: 900;
+        letter-spacing: -0.1vw;
+        margin-bottom: 1vw;
+}
+
+.section-6 .section-6-content ul{
+    list-style: none;
+    display: flex;
+}
+
+.section-6 .section-6-content ul li{
+    display: flex;
+    flex-flow: column;
+}
+
+.section-6 .section-6-content ul li img{
+    margin: 0.5vw;
+}
+
+.section-6 .section-6-content ul li:nth-child(1) img:nth-child(1){
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+    /* object-position: left top; */
+}
+
+.section-6 .section-6-content ul li:nth-child(1) img:nth-child(2){
+    width: 27vw;
+    /* height: 50vw; */
+    /* object-fit: cover; */
+    /* object-position: left top; */
+    position: relative;
+    left: 23vw;
+}
+
+.section-6 .section-6-content ul li:nth-child(2) img{
+    width: 42vw;
+    /* height: 50vw; */
+    object-fit: cover;
+    /* object-position: left top; */
+    position: relative;
+    top: 10.99vw;
+}
+
+/* .section-6 img{
+    width: 88vw;
+} */
+
+.section-6 p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    color: #EF4242;
+    width: 34vw;
+    margin: 0.5vw;
+    transform: translateY(9vw) translateX(0.8vw);
+}
+
+.section-6 .circle{
+    width: 75vw;
+    height: 75vw;
+    background-color: #FAE8E8;
+    position: absolute;
+    top: 10vw;
+    left: 30vw;
+    z-index: -1;
+}
+
+
+.section-7{
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+    min-height: 80vw;
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 20vw;
+}
+
+.section-7 .section-7-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vw;
+    /* border: 1px solid red; */
+}
+
+/* .section-7 .section-7-top img{
+    width: 50vw;
+    
+} */
+
+.section-7 .section-7-top h1{
+    position: absolute;
+    top: 0;
+    left: 39vw;
+    font-size: 22vw;
+    color: #FEDADA;
+    z-index: -1;
+    font-family: 'Helvetica Neue 5';
+    font-weight: 900;
+    letter-spacing: -0.1vw;
+}
+
+.section-7 .section-7-top h2{
+    position: absolute;
+    top: 10vw;
+    left: 30vw;
+    font-size: 22vw;
+    color: #EF4242;
+    z-index: 1;
+    font-family: 'Helvetica Neu 5';
+    font-weight: 900;
+    letter-spacing: -0.1vw;
+}
+
+.section-7 .section-7-top p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    transform: translate(16vw, 14.5vw);
+    width: 38vw;
+    color: #EF4242;
+}
+
+.section-7 .section-7-top img:nth-child(1){
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 5vw;
+    width: 40vw;
+    z-index: -2;
+    top: 16vw;
+}
+
+.section-7 .this{
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 8vw;
+    width: 34.5vw;
+    z-index: 4;
+    top: 16vw;
+}
+
+
+.section-7 .section-7-bottom{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-7 .section-7-bottom img{
+    width: 20vw;
+    margin-right: 2vw;
+    transform: translate(-1.5vw, -0.6vw);
+}
+
+
+.section-7 .section-7-bottom p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    color: #EF4242;
+    width: 25vw;
+    transform: translate(-1.7vw, -0.6vw);
+}
+
+.section-8{
+    width: 100vw;
+    min-height: 30vw;
+    /* border: 1px solid red; */
+    position: relative;
+    padding-top: 10vw;
+}
+
+/* .section-8 img{
+    width: 100vw;
+} */
+
+.section-8 ul{
+    display: flex;
+    list-style: none;
+}
+
+.section-8 img{
+    margin: 0.5vw;
+}
+
+.section-8 ul li:nth-child(1) img:nth-child(1){
+    width: 36vw;
+    position: relative;
+    right: 0.5vw;
+    /* border: 1px solid red; */
+
+}
+
+.section-8 ul li:nth-child(1) img:nth-child(2){
+    width: 18vw;
+    position: relative;
+    /* bottom: 0.2vw; */
+    left: 17.5vw;
+    /* border: 1px solid red; */
+}
+
+.section-8 ul li:nth-child(1) {
+    font-size: 0; 
+}
+
+.section-8 ul li:nth-child(2) img{
+    width: 39vw;
+    height: 39vw;
+    object-fit: cover;
+    /* object-position: left top; */
+    position: relative;
+    top: 1.1vw;
+    right: 0.5vw;
+}
+
+.section-8 ul li:nth-child(3) img{
+    width: 25vw;
+    height: 25vw;
+    position: relative;
+    top: 35vw;
+    right: 0.5vw;
+
+}
+
+.section-8 .last-txt{
+    width: 31vw;
+    height: 20vw;
+    background-color: #EF4242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* left: 0.5vw; */
+    top: 0.5vw;
+    /* padding: 2vw;
+    position: absolute;
+    left: 37.8vw;
+    top: 5.4vw; */
+}
+
+.section-8 .last-txt p{
+    color: #F9CECE;
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    width: 25vw;
+}
+
+
+
+
+footer{
+    width: 100vw;
+    min-height: 36vw;
+    background-color: #EF4242;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    margin-top: 30vw;
+    color: #F9CECE;
+}
+
+footer img{
+    width: 16vw;
+    margin-bottom: 1vw;
+    position: relative;
+    right: 34vw;
+}
+
+footer .footer-line{
+    width: 92%;
+    border: 0.09vw solid #F9CECE;
+    margin-bottom: 1vw;
+}
+
+footer .nav{
+    display: flex;
+}
+
+footer .nav ul{
+    display: flex;
+}
+
+footer .nav ul:nth-child(1){
+    position: relative;
+    right: 19vw;
+}
+
+footer .nav ul:nth-child(2){
+    position: relative;
+    left: 15vw;
+}
+
+footer .nav li{
+    list-style: none;
+    margin: 1vw;
+}
+
+
+footer .nav li a{
+    color: #F9CECE;
+    font-size: 1.7vw;
+}
+
+
+footer p{
+    color: #F9CECE;
+    font-size: 1.3vw;
+    width: 66vw;
+    position: relative;
+    right: 8.4vw;
+    top: 2vw;
+}
