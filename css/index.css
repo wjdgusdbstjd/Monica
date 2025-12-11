@@ -88,7 +88,9 @@
         width: 5vw;
         position: relative;
         left: 1.7vw;
+        top: 0.2vw;
     }
+
 
     .head-middle {
         background-color: #ededed;
@@ -103,7 +105,7 @@
     .head-middle .button {
         display: flex;
         position: relative;
-        right: 32.5vw;
+        right: 30.73vw;
     }
 
     .head-middle .button-red {
@@ -133,12 +135,17 @@
         border: 0.09vw solid #bcbcbc;
     }
 
-    .head-middle p {
+      .head-middle p {
         font-size: 1.3vw;
         color: #4C4C4C;
-        border: 0.15vw solid #d1d1d0b4;
+        border: 0.15vw solid #c3c3c3b4;
         border-radius: 0.6vw;
-        padding: 0.4vw 8vw 0.4vw 8vw;
+        width: 30vw;
+        height: 2.6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0.4vw 8vw 0.4vw 8vw; */
         /* 위  오  아 왼*/
     }
 
@@ -339,12 +346,14 @@ header.active .line {
 header.active .line-1 {
     background-color: #B650F0;
     transition: background-color 0.5s;
+    position: relative;
+    right: 0.2vw;
 }
 
 
 .menu-trigger {
     position: fixed;
-    top: 7vw;
+    top: 8.5vw;
     right: 1vw;
     z-index: 100;
     font-size: 1.4vw;
@@ -369,6 +378,107 @@ header.active .line-1 {
 }
 
 
+.friends-container {
+        display: flex;
+        /* justify-content: center; */
+        /* 중앙 정렬 */
+        align-items: center;
+        align-items: flex-end;
+        height: 4vw;
+        width: 9vw;
+        /* height: 100vw; */
+        /* 화면 중앙에 보려고 넣은 거라 나중에 빼도 돼 */
+        /* background-color: black; */
+        /* border: 1px solid red; */
+        /* GIF처럼 배경 검게 */
+        margin-bottom: 5vw;
+        position: relative;
+        left: 4vw;
+        top: 2vw;
+    }
+
+    /* 공통 이미지 스타일 */
+    .letter {
+        /* width: 60px; */
+        /* 이미지 크기는 네 디자인에 맞춰 조절해 */
+        height: auto;
+        margin: 0 0.1vw;
+        /* 글자 사이 간격 살짝 */
+
+        /* 애니메이션 적용: 이름(bounce) 시간(1.5초) 무한반복(infinite) 부드럽게(ease-in-out) */
+        animation: bounce 1.6s infinite ease-in-out;
+    }
+
+    /* 움직임 정의 (위아래 둥둥) */
+    @keyframes bounce {
+
+        0%,
+        30% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-1.3vw);
+        }
+
+        100%{
+            transform: translateY(0);
+        }
+
+    }
+
+    /* 핵심! 글자마다 박자가 늦게 시작하게 설정 (Wave 효과) */
+    /* nth-child(숫자)는 n번째 이미지를 뜻해 */
+
+    .letter:nth-child(1) {
+        animation-delay: 0s;
+        width: 1vw;
+    }
+
+    /* F */
+    .letter:nth-child(2) {
+        animation-delay: 0.1s;
+        width: 0.8vw;
+    }
+
+    /* r */
+    .letter:nth-child(3) {
+        animation-delay: 0.2s;
+        width: 0.58vw;
+    }
+
+    /* i */
+    .letter:nth-child(4) {
+        animation-delay: 0.3s;
+        width: 1.09vw;
+    }
+
+    /* e */
+    .letter:nth-child(5) {
+        animation-delay: 0.4s;
+        width: 1.19vw;
+    }
+
+    /* n */
+    .letter:nth-child(6) {
+        animation-delay: 0.5s;
+        width: 1.2vw;
+    }
+
+    /* d */
+    .letter:nth-child(7) {
+        animation-delay: 0.6s;
+        width: 1.1vw;
+    }
+
+    /* s */
+    .letter:nth-child(8) {
+        animation-delay: 0.7s;
+        width: 0.7vw;
+    }
+
+
+    
 
 
 
@@ -413,7 +523,34 @@ header.active .line-1 {
         top: 54vw;
     }
 
- .section-1{
+
+    .main .tag-content img{
+        height: 4vw;
+        width: auto;
+    }
+
+
+    .main .tag-content img:nth-child(1){
+        position: absolute;
+        top: 20vw;
+        left: 36vw;
+    }
+
+    .main .tag-content img:nth-child(2){
+        position: absolute;
+        top: 36vw;
+        left: 72vw;
+    }
+
+    .main .tag-content img:nth-child(3){
+        position: absolute;
+        top: 40vw;
+        left: 62vw;
+    }
+
+
+
+.section-1{
         width: 100vw;
         min-height: 100vw;
         /* border: 3px solid red; */
@@ -702,15 +839,31 @@ header.active .line-1 {
 
 .section-2-bottom img{
     width: 20vw;
+    cursor: pointer;
+    transition: all 0.3s ease-out; 
 }
 
-.section-2 p{
+.section-2-bottom img:hover{
+    transform: scale(0.9);
+}
+
+/* 기존 .section-2 p 설정은 유지하되, hover 부분은 지우기 */
+.section-2 p {
     font-size: 1.4vw;
     line-height: 1.7vw;
-    position: relative;
-    bottom: 0.5vw;
-    padding: 1.2vw 4.5vw 0vw 2.5vw;
+    padding: 0.4vw 4.5vw 0vw 2.5vw;
     color: #EF4242;
+
+    /* 숨김 상태 (기본) */
+    opacity: 0;
+    transform: translateX(-5vw); /* 왼쪽에서 대기 */
+    transition: all 0.6s ease-out; 
+}
+
+/* 👇 자바스크립트로 이 클래스를 붙여줄 거야 */
+.section-2 p.active {
+    opacity: 1;               /* 보임 */
+    transform: translateX(0); /* 제자리로 슥 이동 */
 }
 
 
